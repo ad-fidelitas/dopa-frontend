@@ -8,8 +8,8 @@
         <v-btn class="sizeup secondary rounded-corners" text>How it Works</v-btn>
         <v-btn class="sizeup secondary rounded-corners" text>About Us</v-btn>
         <v-btn class="sizeup secondary rounded-corners" text>Help Center</v-btn>
-        <v-btn class="rounded-corners signin secondary" text>Login</v-btn>
-        <v-btn class="rounded-corners signin secondary dark" text>Register</v-btn>
+        <v-btn round class="signin secondary" text>Login</v-btn>
+        <v-btn class="signin secondary dark" text>Register</v-btn>
       </v-toolbar-items>
     </v-toolbar>
 </div>
