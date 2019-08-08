@@ -1,4 +1,7 @@
 <template>
+<div>
+<v-divider/>
+<br/><br/>
     <v-container fill-height>
       <v-layout align-center>
         <v-flex>
@@ -19,6 +22,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+</div>
 </template>
 
 <script lang="ts">
@@ -40,7 +44,7 @@ export default Vue.extend({
 
 <style scoped>
 .ok{
-  font-size: 35px;
+  font-size: 45px;
   color: white;
 }
 </style>

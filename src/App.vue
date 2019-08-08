@@ -1,30 +1,23 @@
 <template>
-  <div class="bg">
-  <Navbar/>
-    <v-content>
-      <Home/>
-    </v-content>
-  </div>
+  <v-app>
+    <component v-bind:is="layout"></component>
+  </v-app>
 </template>
-
+ 
 <script lang="ts">
-import Vue from 'vue';
-import Navbar from './components/Navbar.vue';
-import Home from './views/Home.vue';
+import store from "@/store";
+import Guestlayout from './layouts/Guestlayout.vue';
+import Loginlayout from './layouts/Loginlayout.vue';
 
-export default Vue.extend({
-  name: 'App',
-  components: {
-    Navbar,
-    Home,
+export default {
+  computed: {
+    layout () {
+      return store.getters.layout
+    }
   },
-});
-</script>
-
-<style scoped>
-.bg{
-  background-image: url('./assets/image/home_bg.jpg');
-  background-size: cover;
-  min-height: 1000px;
+  components: {
+    'guest-layout': Guestlayout,
+    'login-layout': Loginlayout
+  }
 }
-</style>
+</script>
