@@ -12,12 +12,12 @@ import Loginlayout from './layouts/Loginlayout.vue';
 export default {
   computed: {
     layout () {
-      return store.getters.layout
+      return store.getters.layout;
     }
   },
   components: {
     'guest-layout': Guestlayout,
-    'login-layout': Loginlayout
+    'login-layout': Loginlayout,
   }
 }
 </script>
